@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Milysec Jelly Playground</title>
+    <meta name="theme-color" content="#08D592" />
+    <style>
+      html, body, #app { height: 100%; margin: 0; background: #070A08; overflow: hidden; }
+      .ui {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        color: #dfe;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+        background: color-mix(in oklab, #070A08 80%, #0cf 0%);
+        border: 1px solid #173b2f;
+        border-radius: 10px;
+        padding: 10px 12px;
+        user-select: none;
+        pointer-events: none;
+        line-height: 1.35;
+        font-size: 13px;
+        white-space: pre-line;
+      }
+      .badge {
+        display: inline-block;
+        margin-right: 8px;
+        width: 10px; height: 10px; border-radius: 3px; background: #08D592;
+        box-shadow: 0 0 0 2px #0a1512 inset;
+      }
+      .joystick {
+        position: fixed;
+        bottom: 26px; left: 26px;
+        width: 128px; height: 128px; border-radius: 50%;
+        background: #0b1915aa; border: 1px solid #133c2f;
+        touch-action: none;
+      }
+      .stick {
+        position: absolute;
+        width: 54px; height: 54px; border-radius: 50%;
+        background: #10e0a4aa; border: 1px solid #2ff0c4;
+        transform: translate(37px, 37px);
+        pointer-events: none;
+      }
+      .hidden { display: none; }
+      a.brand { color: #9C32DF; }
+    </style>
+    <script type="module" crossorigin src="/assets/index-CLflFauA.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-luEV906w.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="ui" id="hud">
+      <span class="badge"></span><strong>Milysec Jelly Playground</strong>
+      <div style="opacity:.85;margin-top:6px">
+        Grab (mouse/touch) to stretch/throw • Space to hop • WASD/Arrows to move<br/>
+        Orbit: right-drag or two-finger drag • Zoom: wheel/pinch • R: reset
+      </div>
+    </div>
+    <div id="joystick" class="joystick hidden"><div class="stick" id="stick"></div></div>
+  </body>
+  </html>
+

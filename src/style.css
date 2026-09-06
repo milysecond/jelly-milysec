@@ -1,0 +1,9 @@
+:root {
+  --mint: #08D592;
+  --purple: #9C32DF;
+  --bg: #070A08;
+}
+html, body { background: var(--bg); }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;
+}
