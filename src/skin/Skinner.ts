@@ -51,6 +51,7 @@ export function applySkin(
   outPositions: Float32Array
 ) {
   const tmp = new THREE.Vector3();
+  const p = new THREE.Vector3();
   for (let i = 0; i < skin.length; i++) {
     const sw = skin[i];
     tmp.set(0, 0, 0);
@@ -58,7 +59,8 @@ export function applySkin(
       const ni = sw.indices[j];
       const w = sw.weights[j];
       const node = nodes[ni];
-      tmp.addScaledVector(tmp.copy(node).add(sw.offsets[j]), w);
+      p.copy(node).add(sw.offsets[j]);
+      tmp.addScaledVector(p, w);
     }
     const k = i * 3;
     outPositions[k + 0] = tmp.x;
