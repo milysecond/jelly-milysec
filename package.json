@@ -1,0 +1,30 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "Soft-body WebGPU Milysec logo playground (inspired by [scottstts/Jelly-Baby](https://github.com/scottstts/Jelly-Baby)).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milysecond/jelly-milysec.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milysecond/jelly-milysec/issues"
+  },
+  "homepage": "https://github.com/milysecond/jelly-milysec#readme",
+  "dependencies": {
+    "three": "^0.167.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.185.4",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  }
+}
